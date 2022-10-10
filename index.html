@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>forecast</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><img class="myBtn_img" src="images/up.png" alt=""></button>
+
+    <header class="header_bg">
+        <div class="header">
+
+            <img src="images/bg/cloud1.png" class="cloud_1">
+            <img src="images/bg/cloud1.png" class="cloud_2">
+            <img src="images/bg/cloud1.png" class="cloud_3">
+            <img src="images/bg/cloud2.png" class="cloud_4">
+            
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo1.png" class="logo_img">
+                </a>
+            </div>
+
+            <div class="lang_bg">
+                <a href="#" title="русский" class="lang_button"><img src="images/ru.png"></a>
+                <a href="#" title="o'zbekcha" class="lang_button"><img src="images/uz.png"></a>
+                <a href="#" title="english" class="lang_button"><img src="images/uk.png"></a>
+            </div>
+
+        </div>
+    </header>
+    <nav class="nav_bar_bg">
+        <div class="nav_bar">
+            <div>
+                <a class="nav_buttons" href="#home">HOME</a>
+                <a class="nav_buttons" href="#today">TODAY'S FORECAST</a>
+                <a class="nav_buttons" href="#nearby">NEAR</a>
+                <a class="nav_buttons" href="#footer">ABOUT US</a>
+            </div>
+            
+
+            <form class="searchBar" method="post" action="/?do=search">
+                <input class="intupSearch" type="hidden" name="do" value="Поиск">
+                <input class="intupSearch" type="hidden" name="subaction" value="Поиск">
+                <input class="intupSearch" name="story" type="search" id="search" placeholder="Поиск...">
+                <button class="buttonSearch" type="submit"><i class="fa fa-magnifying-glass"></i></button>
+                <div class="clear"></div>
+            </form>
+        </div>
+        
+    </nav>
+    <main class="container">
+        <div id="home" class="schedular">
+
+            <div class="schedular_info">
+
+                <div class="ways">
+                    <a href="#">Weather</a>
+                    <a href="#">Uzbekistan</a>
+                    <a href="#">Tashkent</a>
+                </div>
+
+                <p>WEATHER</p>
+                <p class="sch_reg">TASHKENT</p>
+                <p class="sch_country">Uzbekistan</p>
+
+            </div>
+
+            <div class="schedular_picture">
+                <div class="triangle"></div>
+                <img src="images/day/pic.jpg" class="pic">
+            </div>
+
+            <div class="week_schedular">
+                <div class="days">
+                    <div class="day"><a href="#">
+                        <p class="day_title">Thu</p>
+                        <p class="day_number">01</p>
+                        <div class="day_weather">
+                            <img src="images/1.png">
+                        </div>
+                        <p id="degrees_t">30</p>
+                        <p id="degrees_l">16</p>
+                    </a></div>
+                    <div class="day"><a href="#">
+                        <p class="day_title">Fri</p>
+                        <p class="day_number">01</p>
+                        <div class="day_weather">
+                            <img src="images/2.png">
+                        </div>
+                        <p id="degrees_t">30</p>
+                        <p id="degrees_l">16</p>
+                    </a></div>
+                    <div class="day"><a href="#">
+                        <p class="day_title">Sat</p>
+                        <p class="day_number">01</p>
+                        <div class="day_weather">
+                            <img src="images/3.png">
+                        </div>
+                        <p id="degrees_t">30</p>
+                        <p id="degrees_l">16</p>
+                    </a></div>
+                    <div class="day"><a href="#">
+                        <p class="day_title">Sun</p>
+                        <p class="day_number">01</p>
+                        <div class="day_weather">
+                            <img src="images/1.png">
+                        </div>
+                        <p id="degrees_t">30</p>
+                        <p id="degrees_l">16</p>
+                    </a></div>
+                    <div class="day"><a href="#">
+                        <p class="day_title">Mon</p>
+                        <p class="day_number">01</p>
+                        <div class="day_weather">
+                            <img src="images/1.png">
+                        </div>
+                        <p id="degrees_t">30</p>
+                        <p id="degrees_l">16</p>
+                    </a></div>
+                    <div class="day"><a href="#">
+                        <p class="day_title">Tue</p>
+                        <p class="day_number">01</p>
+                        <div class="day_weather">
+                            <img src="images/1.png">
+                        </div>
+                        <p id="degrees_t">30</p>
+                        <p id="degrees_l">16</p>
+                    </a></div>
+                    <div class="day"><a href="#">
+                        <p class="day_title">Wed</p>
+                        <p class="day_number">01</p>
+                        <div class="day_weather">
+                            <img src="images/1.png">
+                        </div>
+                        <p id="degrees_t">30</p>
+                        <p id="degrees_l">16</p>
+                    </a></div>
+                    <div class="day"><a href="#">
+                        <p class="day_title">Thu</p>
+                        <p class="day_number">01</p>
+                        <div class="day_weather">
+                            <img src="images/1.png">
+                        </div>
+                        <p id="degrees_t">30</p>
+                        <p id="degrees_l">16</p>
+                    </a></div>
+                </div>
+            </div>
+
+        </div>
+
+        <a href="#"><div class="ad" data-text="ad"></div></a>
+
+        <section></section>
+        <div id="today" class="today">
+            <div class="td_main">
+                <h1 class="td_title">TODAY'S FORECAST</h1>
+
+                <div class="l">
+                    <p>Tonight in Tashkent, Skies becoming partly cloudy from the early hours. 
+                        No precipitation.Temperatures will vary between 13 and 20°C.</p>
+                    <p>The reliability of the situation is good.</p>
+                </div>
+
+                <a class="td_a" href="#">
+                    <div class="td_degrees">
+                        <hr>
+                        <p class="title">Morning</p>
+                        <div class="td_flex_container">
+                            <div class="td_weather">
+                                <img src="images/2.png">
+                            </div>
+                            <div class="time_interval">
+                                <p>06:00</p>
+                                <img src="images/down.png">
+                                <p>11:00</p>
+                            </div>
+                            <div class="td_degrees_div">
+                                <p class="a">32°</p>
+                                <p class="b">Feels Like <span>27°</span></p>
+                            </div>
+                            <div class="wind_speed">
+                                <div>
+                                    <p><span>8</span> km/h</p>
+                                    <i class="fa-thin fa-wind"></i>
+                                </div>
+                                <p class="p">Wind Speed</p>
+                            </div>
+                            <div class="humidity">
+                                <p><span>30</span> %</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="td_a" href="#">
+                    <div class="td_degrees">
+                        <hr>
+                        <p class="title">Noon</p>
+                        <div class="td_flex_container">
+                            <div class="td_weather">
+                                <img src="images/1.png">
+                            </div>
+                            <div class="time_interval">
+                                <p>11:00</p>
+                                <img src="images/down.png">
+                                <p>14:00</p>
+                            </div>
+                            <div class="td_degrees_div">
+                                <p class="a">32°</p>
+                                <p class="b">Feels Like <span>27°</span></p>
+                            </div>
+                            <div class="wind_speed">
+                                <div>
+                                    <p><span>8</span> km/h</p>
+                                    <i class="fa-thin fa-wind"></i>
+                                </div>
+                                <p class="p">Wind Speed</p>
+                            </div>
+                            <div class="humidity">
+                                <p><span>30</span> %</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="td_a" href="#">
+                    <div class="td_degrees">
+                        <hr>
+                        <p class="title">Afternoon</p>
+                        <div class="td_flex_container">
+                            <div class="td_weather">
+                                <img src="images/1.png">
+                            </div>
+                            <div class="time_interval">
+                                <p>14:00</p>
+                                <img src="images/down.png">
+                                <p>18:00</p>
+                            </div>
+                            <div class="td_degrees_div">
+                                <p class="a">32°</p>
+                                <p class="b">Feels Like <span>27°</span></p>
+                            </div>
+                            <div class="wind_speed">
+                                <div>
+                                    <p><span>8</span> km/h</p>
+                                    <i class="fa-thin fa-wind"></i>
+                                </div>
+                                <p class="p">Wind Speed</p>
+                            </div>
+                            <div class="humidity">
+                                <p><span>30</span> %</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="td_a" href="#">
+                    <div class="td_degrees">
+                        <hr>
+                        <p class="title">Evening</p>
+                        <div class="td_flex_container">
+                            <div class="td_weather">
+                                <img src="images/5.png">
+                            </div>
+                            <div class="time_interval">
+                                <p>18:00</p>
+                                <img src="images/down.png">
+                                <p>00:00</p>
+                            </div>
+                            <div class="td_degrees_div">
+                                <p class="a">32°</p>
+                                <p class="b">Feels Like <span>27°</span></p>
+                            </div>
+                            <div class="wind_speed">
+                                <div>
+                                    <p><span>8</span> km/h</p>
+                                    <i class="fa-thin fa-wind"></i>
+                                </div>
+                                <p class="p">Wind Speed</p>
+                            </div>
+                            <div class="humidity">
+                                <p><span>30</span> %</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <a class="td_a" href="#">
+                    <div class="td_degrees">
+                        <hr>
+                        <p class="title">Night</p>
+                        <div class="td_flex_container">
+                            <div class="td_weather">
+                                <img src="images/4.png">
+                            </div>
+                            <div class="time_interval">
+                                <p>00:00</p>
+                                <img src="images/down.png">
+                                <p>06:00</p>
+                            </div>
+                            <div class="td_degrees_div">
+                                <p class="a">32°</p>
+                                <p class="b">Feels Like <span>27°</span></p>
+                            </div>
+                            <div class="wind_speed">
+                                <div>
+                                    <p><span>10</span> km/h</p>
+                                    <i class="fa-thin fa-wind"></i>
+                                </div>
+                                <p class="p">Wind Speed</p>
+                            </div>
+                            <div class="humidity">
+                                <p><span>30</span> %</p>
+                                <p>Humidity</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="next_days">
+                    <hr>
+                    <p class="title">Next days</p>
+                    <a class="nd_link" href="#">
+                        <div class="nd_button">
+                            <div class="nd_date">
+                                <p>Tomorrow,</p>
+                                <p>Monday 10</p>
+                            </div>
+                            <div class="nd_weather">
+                                <img src="images/1.png">
+                            </div>
+                            <div class="nd_degress"><span>12°</span> | <span>25°</span></div>
+                            <p class="nd_wind_speed"><span>10</span> km/h</p>
+                        </div>
+                    </a>
+                    <a class="nd_link" href="#">
+                        <div class="nd_button">
+                            <div class="nd_date">
+                                <p>Tuesday 11</p>
+                            </div>
+                            <div class="nd_weather">
+                                <img src="images/1.png">
+                            </div>
+                            <div class="nd_degress"><span>12°</span> | <span>25°</span></div>
+                            <p class="nd_wind_speed"><span>10</span> km/h</p>
+                        </div>
+                    </a>
+                    <a class="nd_link" href="#">
+                        <div class="nd_button">
+                            <div class="nd_date">
+                                <p>Wednesday 12</p>
+                            </div>
+                            <div class="nd_weather">
+                                <img src="images/1.png">
+                            </div>
+                            <div class="nd_degress"><span>12°</span> | <span>25°</span></div>
+                            <p class="nd_wind_speed"><span>10</span> km/h</p>
+                        </div>
+                    </a>
+                    <a class="nd_link" href="#">
+                        <div class="nd_button">
+                            <div class="nd_date">
+                                <p>Thursday 13</p>
+                            </div>
+                            <div class="nd_weather">
+                                <img src="images/1.png">
+                            </div>
+                            <div class="nd_degress"><span>12°</span> | <span>25°</span></div>
+                            <p class="nd_wind_speed"><span>10</span> km/h</p>
+                        </div>
+                    </a>
+                    <a class="nd_link" href="#">
+                        <div class="nd_button">
+                            <div class="nd_date">
+                                <p>Friday 14</p>
+                            </div>
+                            <div class="nd_weather">
+                                <img src="images/1.png">
+                            </div>
+                            <div class="nd_degress"><span>12°</span> | <span>25°</span></div>
+                            <p class="nd_wind_speed"><span>10</span> km/h</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="td_side">
+                <a href="#"><div class="ad_side" data-text="ad"></div></a>
+            </div>
+
+            <div class="clear"></div>
+        </div>
+
+    </main>
+
+    <div id="nearby" class="nearby">
+        <div class="nearby_con">
+            <p class="nb_title"><span>Nearby</span> Tashkent</p>
+            <ul class="nb_ul">
+                <li class="nb_li"><a href="#">
+                    <div>
+                        <p>Xonabod</p>
+                        <img class="nb_img" src="images/nearby.png">
+                    </div>
+                </a></li>
+                <li class="nb_li"><a href="#">
+                    <div>
+                        <p>Geofizika</p>
+                        <img class="nb_img" src="images/nearby.png">
+                    </div>
+                </a></li>
+                <li class="nb_li"><a href="#">
+                    <div>
+                        <p>Salar</p>
+                        <img class="nb_img" src="images/nearby.png">
+                    </div>
+                </a></li>
+                <li class="nb_li"><a href="#">
+                    <div>
+                        <p>Bobur</p>
+                        <img class="nb_img" src="images/nearby.png">
+                    </div>
+                </a></li>
+                <li class="nb_li"><a href="#">
+                    <div>
+                        <p>Sabzavot</p>
+                        <img class="nb_img" src="images/nearby.png">
+                    </div>
+                </a></li>
+                <li class="nb_li"><a href="#">
+                    <div>
+                        <p>Yik-Ota</p>
+                        <img class="nb_img" src="images/nearby.png">
+                    </div>
+                </a></li>
+                <li class="nb_li"><a href="#">
+                    <div>
+                        <p>Bordonkul</p>
+                        <img class="nb_img" src="images/nearby.png">
+                    </div>
+                </a></li>
+                <li class="nb_li"><a href="#">
+                    <div>
+                        <p>Bordonko'l</p>
+                        <img class="nb_img" src="images/nearby.png">
+                    </div>
+                </a></li>
+                <li class="nb_li"><a href="#">
+                    <div>
+                        <p>Pastdarxon</p>
+                        <img class="nb_img" src="images/nearby.png">
+                    </div>
+                </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div class="footer_con">
+
+            <div class="upper">
+                <a class="footer_logo_link" href="#">
+                    <div class="footer_logo">
+                        <img src="images/logo2.png">
+                        <p>WEATHER <br> PLUS</p>
+                    </div>
+                </a>
+
+                <ul class="footer_ul">
+                    <a href="#"><li>About us</li></a>
+                    <a href="#"><li>Contact us</li></a>
+                    <a href="#"><li>More info</li></a>
+                    <a href="#"><li>Admin</li></a>
+                    <a href="#"><li>Support</li></a>
+                    <a href="#"><li>Ideas</li></a>
+                </ul>
+            </div>
+            <ul class="footer_links">
+                <li class="footer_link"><a href="#">Legal notice</a></li>
+                <li class="footer_link"><a href="#">Site map</a></li>
+                <li class="footer_link"><a href="#">Information about cookies</a></li>
+                <li class="footer_link"><a href="#">Confidentiality policy</a></li>
+                <li class="footer_link"><a href="#">Set cookies</a></li>
+            </ul>
+            
+            
+        </div>
+    </footer>
+
+    <script src="js/moves.js"></script>
+</body>
+</html>
